@@ -4,6 +4,7 @@ import logo from '../../../assets/logo.png';
 import Banner from '../../Banner/Banner';
 import cv from '../../../assets/CV.pdf';
 import { Link, /* animateScroll as scroll, Element */ } from 'react-scroll';
+import About from '../../About/About';
 
 const Home = () => {
     return (
@@ -11,7 +12,7 @@ const Home = () => {
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content">
                 {/* Responsive SideBar */}
-                <div className='mx-3 lg:hidden items-center mt-2 flex gap-32 justify-between'>
+                <div className='mx-3 py-2 lg:hidden items-center flex gap-32 justify-between'>
                     <div className='flex items-center gap-3'>
                         <img className=' rounded-full h-[50px] w-[50px]' src={me} alt="" />
                         <p className='font-serif font-bold text-lg'>Tania <span className='text-[#A5A6FF]'>A.</span></p>
@@ -20,7 +21,7 @@ const Home = () => {
                 </div>
                 {/* Page content here */}
                 <Banner></Banner>
-                
+                <About></About>
 
                 {/* Large screen sidebar */}
             </div>
@@ -73,7 +74,7 @@ const Home = () => {
                             offset={-70}
                             duration={500}
                         >
-                            <button>Projects</button>
+                            <button>Portfolio</button>
                         </Link>
                         <Link className='hover:text-[#A5A6FF]'
                             activeClass="active"
