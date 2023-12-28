@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div className="drawer lg:drawer-open">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content">
+            <div className="drawer-content mb-72">
                 {/* Responsive SideBar */}
                 <div className='mx-3 py-2 lg:hidden items-center flex gap-32 justify-between'>
                     <div className='flex items-center gap-3'>
@@ -66,16 +66,7 @@ const Home = () => {
                         >
                             <button>About</button>
                         </Link>
-                        <Link className='hover:text-[#A5A6FF]'
-                            activeClass="active"
-                            to="section3"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
-                            <button>Portfolio</button>
-                        </Link>
+                        
                         <Link className='hover:text-[#A5A6FF]'
                             activeClass="active"
                             to="section4"
@@ -86,6 +77,18 @@ const Home = () => {
                         >
                             <button>Services</button>
                         </Link>
+
+                        <Link className='hover:text-[#A5A6FF]'
+                            activeClass="active"
+                            to="section3"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >
+                            <button>Portfolio</button>
+                        </Link>
+                        
                         <Link className='hover:text-[#A5A6FF]'
                             activeClass="active"
                             to="section5"
