@@ -1,0 +1,33 @@
+.box {
+    position: relative;
+
+    display: block;
+    background: white;
+  }
+  
+  .glowing::before{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #A5A6FF, #A5A6FF, black, #A5A6FF, #A5A6FF, black, #A5A6FF, #A5A6FF, black);
+    background-size: 400%;
+    width: calc(100% + 7px);
+    height: calc(100% + 7px);
+    z-index: -1;
+    animation: glower 20s linear infinite;
+  }
+  
+  @keyframes glower {
+    0% {
+      background-position: 0 0;
+    }
+    
+    50% {
+      background-position: 400% 0;
+    }
+    
+    100% {
+      background-position: 0 0;
+    }
+  }

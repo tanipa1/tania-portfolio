@@ -5,6 +5,7 @@ import Banner from '../../Banner/Banner';
 import cv from '../../../assets/CV.pdf';
 import { Link, /* animateScroll as scroll, Element */ } from 'react-scroll';
 import About from '../../About/About';
+import Services from '../../Services/Services';
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
                 {/* Page content here */}
                 <Banner></Banner>
                 <About></About>
+                <Services></Services>
 
                 {/* Large screen sidebar */}
             </div>
@@ -69,7 +71,7 @@ const Home = () => {
                         
                         <Link className='hover:text-[#A5A6FF]'
                             activeClass="active"
-                            to="section4"
+                            to="section3"
                             spy={true}
                             smooth={true}
                             offset={-70}
@@ -80,7 +82,7 @@ const Home = () => {
 
                         <Link className='hover:text-[#A5A6FF]'
                             activeClass="active"
-                            to="section3"
+                            to="section4"
                             spy={true}
                             smooth={true}
                             offset={-70}
@@ -88,7 +90,7 @@ const Home = () => {
                         >
                             <button>Portfolio</button>
                         </Link>
-                        
+
                         <Link className='hover:text-[#A5A6FF]'
                             activeClass="active"
                             to="section5"

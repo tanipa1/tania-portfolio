@@ -5,7 +5,7 @@ import 'animate.css';
 
 const About = () => {
     return (
-        <Element name="section2" className="element py-8 lg:py-20 ">
+        <Element name="section2" className="element py-8 lg:py-10 ">
             <div className='px-6 lg:px-10'>
                 <div className='lg:flex items-center gap-5 justify-around w-full'>
                     <div className='grid justify-center text-center lg:text-left gap-3 lg:w-1/3'>
